@@ -1,0 +1,122 @@
+#main-body{
+    width: 200px;
+    display: grid;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+    "display display display display"
+    "clear clear negpos add"
+    "one two three subtract"
+    "four five six divide"
+    "seven eight nine multiply"
+    "zero zero decimal equals";
+}
+
+#display {
+    grid-area: display;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 50px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+#display-screen {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 15px;
+    margin-bottom: -10px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.button {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid black;
+}
+
+#clear {
+    grid-area: clear;
+    width: 100px;
+}
+
+#negpos {
+    grid-area: negpos;
+    font-size: 17px;
+}
+
+#one {
+    grid-area: one;
+}
+
+#two {
+    grid-area: two;
+}
+
+#three {
+    grid-area: three;
+}
+
+#four {
+    grid-area: four;
+}
+
+#five {
+    grid-area: five;
+}
+
+#six {
+    grid-area: six;
+}
+
+#seven {
+    grid-area: seven;
+}
+
+#eight {
+    grid-area: eight;
+}
+
+#nine {
+    grid-area: nine;
+}
+
+#zero {
+    grid-area: zero;
+    width: 100px;
+}
+
+#add {
+    grid-area: add;
+}
+
+#subtract {
+    grid-area: subtract;
+}
+
+#divide {
+    grid-area: divide;
+}
+
+#multiply {
+    grid-area: multiply;
+}
+
+#decimal {
+    grid-area: decimal;
+}
+
+#equals {
+    grid-area: equals;
+}
